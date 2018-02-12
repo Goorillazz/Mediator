@@ -8,8 +8,6 @@ namespace Mediator
 {
     public class Jobsuchender : JobsuchenderBase
     {
-        private readonly Jobcenter _jobcenter;
-
         public Jobsuchender(Jobcenter jobcenter) : base(jobcenter)
         {
             
@@ -22,7 +20,7 @@ namespace Mediator
 
             if (okay)
             {
-                _jobcenter.AkzeptiereJob(id);
+                Jobcenter.AkzeptiereJob(id);
             }
 
         }
