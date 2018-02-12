@@ -2,7 +2,7 @@
 {
     public abstract class JobsuchenderBase : Colleague
     {
-        protected JobsuchenderBase(IMediator mediator) : base(mediator)
+        protected JobsuchenderBase(IMediator<Colleague> mediator) : base(mediator)
         {
         }
 

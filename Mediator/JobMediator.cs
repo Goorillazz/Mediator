@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mediator
 {
-    public class JobMediator : IMediator
+    public class JobMediator : IMediator<Colleague>
     {
         public JobMediator()
         {

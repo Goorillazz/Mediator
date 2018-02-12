@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Mediator
 {
-    public interface IMediator
+    public interface IMediator<T>
     {
-        void Send(string message, Colleague clo);
-    }
+        void Send(string message, T clo);
+    }    
 }

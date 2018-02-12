@@ -8,7 +8,7 @@ namespace Mediator
 {
     public class Jobsuchender : JobsuchenderBase
     {
-        public Jobsuchender(IMediator mediator) : base(mediator)
+        public Jobsuchender(IMediator<Colleague> mediator) : base(mediator)
         {
             
         }
