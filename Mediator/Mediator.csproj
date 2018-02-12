@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Colleague.cs" />
     <Compile Include="Jobcenter.cs" />
     <Compile Include="JobsuchenderBase.cs" />
     <Compile Include="Jobsuchender.cs" />
+    <Compile Include="IMediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
