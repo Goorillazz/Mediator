@@ -1,10 +1,10 @@
 ﻿namespace Mediator
 {
-    public abstract class JobsuchenderBase
+    public abstract class JobsuchenderBase : Colleague
     {
         protected readonly Jobcenter Jobcenter;
 
-        protected JobsuchenderBase(Jobcenter jobcenter)
+        protected JobsuchenderBase(Jobcenter jobcenter, IMediator mediator) : base(mediator)
         {
             Jobcenter = jobcenter;
         }

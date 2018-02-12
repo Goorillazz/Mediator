@@ -9,6 +9,10 @@ namespace Mediator
 {
     public abstract class Colleague
     {
-
+        protected IMediator Mediator;
+        public Colleague(IMediator mediator)
+        {
+            Mediator = mediator;
+        }
     }
 }
