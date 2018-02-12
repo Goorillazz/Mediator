@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Mediator
 {
-    public class Jobcenter
+    public class Jobcenter : Colleague
     {
-        public Jobcenter()
+        public Jobcenter(IMediator mediator) : base(mediator)
         {
-            Jobsuchender = new List<JobsuchenderBase>();
         }
 
         private readonly Dictionary<int, string> _jobs = new Dictionary<int, string>();
 
-        public List<JobsuchenderBase> Jobsuchender { get; set; }
+        
         
         public void MeldeJob(string text, int id)
         {
@@ -24,7 +23,7 @@ namespace Mediator
 
             _jobs.Add(id, text);
 
-            Jobsuchender.ForEach(j => j.BegutachtetJob(text,id));
+            Mediator.Send(text + "_" + id.ToString(),this);            
         }
 
 

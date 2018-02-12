@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Colleague.cs" />
     <Compile Include="Jobcenter.cs" />
+    <Compile Include="JobMediator.cs" />
     <Compile Include="JobsuchenderBase.cs" />
     <Compile Include="Jobsuchender.cs" />
     <Compile Include="IMediator.cs" />

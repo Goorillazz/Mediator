@@ -8,7 +8,7 @@ namespace Mediator
 {
     public class Jobsuchender : JobsuchenderBase
     {
-        public Jobsuchender(Jobcenter jobcenter, IMediator mediator) : base(jobcenter, mediator)
+        public Jobsuchender(IMediator mediator) : base(mediator)
         {
             
         }
@@ -20,7 +20,7 @@ namespace Mediator
 
             if (okay)
             {
-                Jobcenter.AkzeptiereJob(id);
+                Mediator.Send(id.ToString(), this);
             }
 
         }
